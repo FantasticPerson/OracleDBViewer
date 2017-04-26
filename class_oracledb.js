@@ -1,10 +1,10 @@
-﻿'use strict';
+'use strict';
 var oracledb = require('oracledb');
 var config = {
-	dbowner: 'ZHNJ.',
+	dbowner: '',
 	dbconn: {
-		user: 'huanbao',
-		password: 'huanbao!@#321',
+		user: 'njhb',
+		password: '1',
 		connectString: 'ORCL_HB'
 		//mv ./tnsnames.ora /etc/tnsnames.ora
 	}
@@ -12,7 +12,7 @@ var config = {
 
 exports.createTester = function() {
 	return new Tester();
-};
+}
 
 function Tester() {
 
@@ -50,7 +50,6 @@ Tester.prototype = {
 			});
 	},
 	query: function(sql, params, callback) {
-		//console.log('o-sql:>>>',sql);
 		oracledb.getConnection(
 			config.dbconn,
 			function(err, connection) {
@@ -82,7 +81,7 @@ Tester.prototype = {
 					});
 			});
 	}
-};
+}
 
 //var test = new Tester();
 //test.query("select * from " + config.dbowner + "WATERFACTORY", [], function(rows,msg) {
