@@ -1,0 +1,27 @@
+{
+  "name": "hb_mynanjing",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "server.js",
+  "scripts": {
+    "test": "none",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "smile",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "mysql": "^2.12.0",
+    "node-gyp": "^3.4.0",
+    "oracledb": "^1.11.0"
+  }
+}
